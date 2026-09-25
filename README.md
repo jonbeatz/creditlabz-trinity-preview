@@ -63,3 +63,15 @@ Nothing is silently replaced.
 This README is the house pattern for Jon's preview repos. Copy the shape:
 badges → live link → hero screenshot → what's inside → tech stack →
 structure → workflow.
+
+## Revision history
+
+- **2026-09-25 — `charcoal-restyle`** — Killed the amber/brown wash: deeper
+  charcoal base (`#0a0b0d`), cooled the warm-tinted grays, removed the gold
+  background glow. Red is now the lead accent (primary buttons, eyebrow,
+  DEMO mark, usage bars); gold kept only for tiny accents and per-card
+  service coding. Added: provider facet filter pills (All / Live / Manual),
+  live "Nd left" countdown chip on the Higgsfield Sep 30 cashback deadline,
+  card hover lift, tabular numerals on balances, red text selection, and
+  `prefers-reduced-motion` coverage for the new interactions. Fresh dark-mode
+  hero screenshot.
