@@ -1,15 +1,65 @@
-# CreditLabz — Trinity's Bake-off Entry
+# ⚡ CreditLabz — Trinity Preview
 
-Trinity's design entry for the **CreditLabz** API credit dashboard bake-off.
+> Trinity's design entry for Jon's **CreditLabz** bake-off — a glassmorphic
+> command view of API credit and AI subscriptions, minus the busywork.
 
-- **What:** Card-style dashboard tracking API credits + subscriptions across Jon's AI services.
-- **Data:** All dummy/prototype data. No real keys, no live balances.
-- **Design:** Glassmorphic frosted-glass cards, tight corners, no colored strokes. Dark charcoal + red/gold accents.
+[![GitHub Pages](https://img.shields.io/github/deployments/jonbeatz/creditlabz-trinity-preview?label=github%20pages)](https://jonbeatz.github.io/creditlabz-trinity-preview/)
+[![Last commit](https://img.shields.io/github/last-commit/jonbeatz/creditlabz-trinity-preview)](https://github.com/jonbeatz/creditlabz-trinity-preview/commits/main)
+[![Repo size](https://img.shields.io/github/repo-size/jonbeatz/creditlabz-trinity-preview)](https://github.com/jonbeatz/creditlabz-trinity-preview)
+![Static site](https://img.shields.io/badge/site-static%20html-blue)
 
-## Live (planned)
-fal.ai · OpenRouter · DeepSeek
+**🚀 Live preview:** https://jonbeatz.github.io/creditlabz-trinity-preview/
 
-## Manual cards
-Higgsfield API · Higgsfield Starter · Cursor · Codex · Muse
+![CreditLabz preview](assets/screenshot.png)
 
-Live preview via GitHub Pages.
+> **Prototype data only.** Every balance, renewal date, and connection is a
+> sample. No credentials are stored or sent from this page.
+
+## What's inside
+
+- **Live API balance cards** — fal.ai, OpenRouter, DeepSeek. Mocked for now,
+  planned for authenticated server-side pulls behind the private REST API.
+- **Manual account cards** — Higgsfield API, Higgsfield Starter, Cursor,
+  Codex, Muse. For services with no public balance endpoint.
+- **Higgsfield cashback flag** — the Sept 30 promo deadline stays visible.
+- **Spend + coverage charts** — September usage, 7-day shape, coverage vs
+  limits.
+- **Connections / Build plan tabs** — where the real backend wiring will land.
+
+## Design language
+
+Glassmorphic frosted-glass cards, small tight radius corners, no colored
+strokes. Dark charcoal + grays with red and gold accents — no teal, aqua,
+or purple. Jon's locked website taste.
+
+## Tech stack
+
+| Layer   | Choice                                                         |
+| ------- | -------------------------------------------------------------- |
+| Markup  | Single self-contained `index.html` (CSS + JS inlined)          |
+| Runtime | None — opens straight in the browser, no build step            |
+| Hosting | GitHub Pages, served from `main` (`.nojekyll`, no Jekyll pass) |
+| Data    | Dummy/sample data, clearly labeled throughout                  |
+
+## Project structure
+
+```text
+creditlabz-trinity-preview/
+├── index.html          # the whole app — self-contained build
+├── assets/
+│   └── screenshot.png  # README hero shot
+├── .nojekyll           # tell Pages to serve files as-is
+└── README.md
+```
+
+## Workflow — branches, not overwrites
+
+`main` always mirrors the latest approved build. Every change gets cut as a
+**new branch** off `main` and previewed via GitHub Pages before it lands.
+Nothing is silently replaced.
+
+## Use this repo as a template
+
+This README is the house pattern for Jon's preview repos. Copy the shape:
+badges → live link → hero screenshot → what's inside → tech stack →
+structure → workflow.
