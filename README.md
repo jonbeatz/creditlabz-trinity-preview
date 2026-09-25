@@ -66,6 +66,21 @@ structure → workflow.
 
 ## Revision history
 
+- **2026-09-25 — `xrev-best-of-both`** — Cross-review update pass (Trinity lane,
+  staying charcoal + red/gold per the bake-off brief — no cyan). Agreed steals
+  implemented: Ravyn-style card traces (glow curve, area wash + end dot) in
+  the red accent while keeping the 7-day usage bar panel; radii tightened to
+  4px everywhere; new USE OR LOSE urgency hero for the Sep 30 Higgsfield
+  cashback deadline with live countdown; single global DEMO banner —
+  per-card MOCK/MANUAL/SAMPLE chips removed; "Connection health 0/8" renamed
+  to "Configured connections"; Configure/Edit controls got real button
+  affordance; cap bars now read "Used $X of $Y cap" + "$Z remaining". Kept:
+  sticky Overview/Connections/Build-plan tabs, 4-metric summary strip,
+  provider monograms + config dialog shell, access-model panel, narrative
+  order. Stayed single-file HTML (a JSON split would break the file:// demo
+  and adds fetch failure surface). Fresh dark-mode hero screenshot in the
+  same commit.
+
 - **2026-09-25 — `charcoal-restyle`** — Killed the amber/brown wash: deeper
   charcoal base (`#0a0b0d`), cooled the warm-tinted grays, removed the gold
   background glow. Red is now the lead accent (primary buttons, eyebrow,
