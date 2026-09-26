@@ -176,7 +176,7 @@
         <div class="metric"><div class="metric-label">Available API credit</div><div class="metric-value">$60.20</div><div class="metric-note">Across 3 sample live-capable accounts</div></div>
         <div class="metric"><div class="metric-label">September API usage</div><div class="metric-value">$31.20</div><div class="metric-note">Illustrative spend only</div></div>
         <div class="metric"><div class="metric-label">Known subscriptions</div><div class="metric-value">$99/mo</div><div class="metric-note">3 priced plans · Muse excluded</div></div>
-        <div class="metric"><div class="metric-label">Configured connections</div><div class="metric-value">0 / 8</div><div class="metric-note">Sample connections only</div></div>
+        <div class="metric"><div class="metric-label">Configured connections</div><div class="metric-value">0 / 9</div><div class="metric-note">Sample connections only</div></div>
       </div>
 
       <div class="pills" role="group" aria-label="Filter providers">
@@ -215,7 +215,7 @@
         <article class="card manual" style="--service:var(--gold-strong);--service-soft:var(--gold-soft)"><div class="card-top"><div class="provider"><div class="monogram">HS</div><div><div class="provider-name">Higgsfield Starter</div><div class="provider-kind">Creative subscription</div></div></div></div><div class="balance-label">Example monthly plan</div><div class="balance">$19 / mo</div><div class="renewal">Example renewal <strong>Oct 18</strong><br>Kept separate from API credit</div><div class="card-foot"><button class="mini config-link" data-service="Higgsfield Starter">Edit details</button></div></article>
         <article class="card manual" style="--service:var(--red-strong);--service-soft:var(--red-soft)"><div class="card-top"><div class="provider"><div class="monogram">C</div><div><div class="provider-name">Cursor</div><div class="provider-kind">Coding workspace</div></div></div></div><div class="balance-label">Example monthly plan</div><div class="balance">$60 / mo</div><div class="renewal">Example renewal <strong>Oct 11</strong><br>Usage pool not connected</div><div class="card-foot"><button class="mini config-link" data-service="Cursor">Edit details</button></div></article>
         <article class="card manual" style="--service:#b7b3aa;--service-soft:rgba(183,179,170,.12)"><div class="card-top"><div class="provider"><div class="monogram">OA</div><div><div class="provider-name">Codex</div><div class="provider-kind">OpenAI subscription</div></div></div></div><div class="balance-label">Example monthly plan</div><div class="balance">$20 / mo</div><div class="renewal">Example renewal <strong>Oct 04</strong><br>Plan usage may require account sign-in</div><div class="card-foot"><button class="mini config-link" data-service="Codex (OpenAI)">Edit details</button></div></article>
-        <article class="card manual" style="--service:var(--gold-strong);--service-soft:var(--gold-soft)"><div class="card-top"><div class="provider"><div class="monogram">M</div><div><div class="provider-name">Muse</div><div class="provider-kind">Personal agent plan</div></div></div></div><div class="balance-label">Power plan</div><div class="balance">36% used</div><div class="bar" style="--level:36%"><span></span></div><div class="bar-meta"><span>315M tokens left</span><span>Resets Sep 28</span></div><div class="card-foot"><button class="mini config-link" data-service="Muse">Edit details</button></div></article>
+        <article class="card manual" style="--service:var(--gold-strong);--service-soft:var(--gold-soft)"><div class="card-top"><div class="provider"><div class="monogram">M</div><div><div class="provider-name">Muse (Trinity)</div><div class="provider-kind">Personal agent plan</div></div></div></div><div class="balance-label">Power plan</div><div class="balance">36% used</div><div class="bar" style="--level:36%"><span></span></div><div class="bar-meta"><span>315M tokens left</span><span>Resets Sep 28</span></div><div class="card-foot"><button class="mini config-link" data-service="Muse (Trinity)">Edit details</button></div></article>
         <article class="card manual" style="--service:#57c8dc;--service-soft:rgba(87,200,220,.12)"><div class="card-top"><div class="provider"><div class="monogram">GB</div><div><div class="provider-name">GrokBot (Ravyn)</div><div class="provider-kind">AI assistant plan</div></div></div></div><div class="balance-label">Weekly usage</div><div class="balance">3%</div><div class="bar" style="--level:3%"><span></span></div><div class="bar-meta"><span>Resets Oct 2 · in 7 days</span></div><div class="balance-label" style="margin-top:14px">On-demand usage</div><div class="balance">$8.09 / $2</div><div class="bar" style="--level:100%;--service:var(--red-strong);--service-soft:var(--red-soft)"><span></span></div><div class="bar-meta"><span style="color:var(--red-strong)">Over $2 limit</span><span>Resets Oct 11 · in 16 days</span></div><div class="card-foot"><button class="mini config-link" data-service="GrokBot (Ravyn)">Edit details</button></div></article>
       </div>
 
@@ -235,7 +235,7 @@
         <article class="connection"><div><h3>Higgsfield Starter</h3><p>Track plan price, renewal, and included credits independently from API spend.</p></div><div class="auth">MANUAL</div></article>
         <article class="connection"><div><h3>Cursor</h3><p>Enter the plan price and reset date manually until an official usage route is available.</p></div><div class="auth">MANUAL</div></article>
         <article class="connection"><div><h3>Codex (OpenAI)</h3><p>Keep the consumer subscription separate from OpenAI API billing and organization usage.</p></div><div class="auth">MANUAL</div></article>
-        <article class="connection"><div><h3>Muse</h3><p>Add verified plan and usage fields through an approved connection, or maintain them manually.</p></div><div class="auth">MANUAL</div></article>
+        <article class="connection"><div><h3>Muse (Trinity)</h3><p>Add verified plan and usage fields through an approved connection, or maintain them manually.</p></div><div class="auth">MANUAL</div></article><article class="connection"><div><h3>GrokBot (Ravyn)</h3><p>Track weekly and on-demand usage manually until an official usage route is available.</p></div><div class="auth">MANUAL</div></article>
       </div>
     </section>
 
@@ -268,7 +268,7 @@
     <form method="dialog" id="configForm">
       <div class="modal-head"><h2 id="dialogTitle">Configure prototype</h2><button class="x" value="cancel" aria-label="Close">×</button></div>
       <div class="modal-body">
-        <div class="field"><label for="serviceSelect">Service</label><select id="serviceSelect"><option>fal.ai</option><option>OpenRouter</option><option>DeepSeek</option><option>Higgsfield API</option><option>Higgsfield Starter</option><option>Cursor</option><option>Codex (OpenAI)</option><option>Muse</option></select></div>
+        <div class="field"><label for="serviceSelect">Service</label><select id="serviceSelect"><option>fal.ai</option><option>OpenRouter</option><option>DeepSeek</option><option>Higgsfield API</option><option>Higgsfield Starter</option><option>Cursor</option><option>Codex (OpenAI)</option><option>Muse (Trinity)</option><option>GrokBot (Ravyn)</option></select></div>
         <div class="field"><label for="authSelect">Connection method</label><select id="authSelect"><option>API key (server-side later)</option><option>Manual account details</option></select></div>
         <div class="field"><label for="dummyKey">Dummy credential label</label><input id="dummyKey" value="demo_key_not_real_••••822" autocomplete="off" /><small>Session-only prototype field. Do not paste a real key here.</small></div>
         <div class="field"><label for="budget">Example monthly cap</label><input id="budget" type="number" min="0" step="1" value="40" /><small>Used only in this open page; it is not saved.</small></div>
@@ -287,7 +287,7 @@
       var authSelect=document.getElementById('authSelect');
       var toast=document.getElementById('toast');
       var toastTimer;
-      var manualServices=['Higgsfield API','Higgsfield Starter','Cursor','Codex (OpenAI)','Muse'];
+      var manualServices=['Higgsfield API','Higgsfield Starter','Cursor','Codex (OpenAI)','Muse (Trinity)','GrokBot (Ravyn)'];
       function showToast(message){clearTimeout(toastTimer);toast.textContent=message;toast.classList.add('show');toastTimer=setTimeout(function(){toast.classList.remove('show')},2800)}
       function syncMethod(){authSelect.value=manualServices.indexOf(serviceSelect.value)>-1?'Manual account details':'API key (server-side later)'}
       tabs.forEach(function(tab){tab.addEventListener('click',function(){tabs.forEach(function(t){t.classList.remove('active');t.setAttribute('aria-selected','false')});panels.forEach(function(p){p.classList.remove('active')});tab.classList.add('active');tab.setAttribute('aria-selected','true');document.getElementById(tab.dataset.panel).classList.add('active')})});
@@ -315,7 +315,7 @@
       document.getElementById('exportBtn').addEventListener('click',function(){
         var data={prototype:true,exported_at:new Date().toISOString(),services:[
           {name:'fal.ai',type:'api',connection:'not_configured'},{name:'OpenRouter',type:'api',connection:'not_configured'},{name:'DeepSeek',type:'api',connection:'not_configured'},
-          {name:'Higgsfield API',type:'manual',connection:'manual'},{name:'Higgsfield Starter',type:'subscription',connection:'manual'},{name:'Cursor',type:'subscription',connection:'manual'},{name:'Codex (OpenAI)',type:'subscription',connection:'manual'},{name:'Muse',type:'subscription',connection:'manual'}
+          {name:'Higgsfield API',type:'manual',connection:'manual'},{name:'Higgsfield Starter',type:'subscription',connection:'manual'},{name:'Cursor',type:'subscription',connection:'manual'},{name:'Codex (OpenAI)',type:'subscription',connection:'manual'},{name:'Muse (Trinity)',type:'subscription',connection:'manual'},{name:'GrokBot (Ravyn)',type:'subscription',connection:'manual'}
         ],note:'Sanitized CreditLabz prototype export. Contains no credentials or live balances.'};
         var blob=new Blob([JSON.stringify(data,null,2)],{type:'application/json'});var url=URL.createObjectURL(blob);var a=document.createElement('a');a.href=url;a.download='creditlabz-prototype.json';document.body.appendChild(a);a.click();a.remove();setTimeout(function(){URL.revokeObjectURL(url)},500);showToast('Sanitized setup exported')
       });
