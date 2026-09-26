@@ -141,6 +141,11 @@
     .delta{width:96px;text-align:right;line-height:1.25}
     .delta .dval{font-family:"IBM Plex Mono",monospace;font-size:15px;font-weight:600;color:var(--red-strong)}
     .delta .dsub{font-family:"IBM Plex Mono",monospace;font-size:9px;color:var(--muted);letter-spacing:.08em}
+
+    .combo{width:96px;text-align:right}
+    .combo .strip{width:96px;height:10px;display:block;margin-bottom:3px;overflow:visible}
+    .combo .dval{font-family:"IBM Plex Mono",monospace;font-size:13px;font-weight:600;color:var(--red-strong);line-height:1.15}
+    .combo .dsub{font-family:"IBM Plex Mono",monospace;font-size:8px;color:var(--muted);letter-spacing:.08em}
 </style>
 </head>
 <body>
@@ -200,7 +205,7 @@
         <article class="card" style="--service:#b7b3aa;--service-soft:rgba(183,179,170,.12);--level:66%">
           <div class="card-top"><div class="provider"><div class="monogram">DS</div><div><div class="provider-name">DeepSeek</div><div class="provider-kind">Direct API</div></div></div></div>
           <div class="balance-label">Example credit</div><div class="balance">$15.50</div><div class="bar"><span></span></div><div class="bar-meta"><span>Used $7.90 of $23.40 cap</span><span>$15.50 remaining</span></div>
-          <div class="card-foot"><button class="mini config-link" data-service="DeepSeek">Configure</button><div class="delta" role="img" aria-label="Sample: up $1.80 versus 12-day average"><div class="dval">&#9650;$1.80</div><div class="dsub">VS 12-DAY AVG</div></div></div>
+          <div class="card-foot"><button class="mini config-link" data-service="DeepSeek">Configure</button><div class="combo" role="img" aria-label="Sample: heat strip plus delta versus 12-day average"><svg class="strip" viewBox="0 0 96 10"><rect x="0" y="0" width="6.5" height="10" rx="2" fill="#8b93a1" opacity=".85"/><rect x="8" y="0" width="6.5" height="10" rx="2" fill="#8b93a1" opacity=".85"/><rect x="16" y="0" width="6.5" height="10" rx="2" fill="#8b93a1" opacity=".85"/><rect x="24" y="0" width="6.5" height="10" rx="2" fill="#8b93a1" opacity=".85"/><rect x="32" y="0" width="6.5" height="10" rx="2" fill="#e8b23e" opacity=".85"/><rect x="40" y="0" width="6.5" height="10" rx="2" fill="#8b93a1" opacity=".85"/><rect x="48" y="0" width="6.5" height="10" rx="2" fill="#e8b23e" opacity=".85"/><rect x="56" y="0" width="6.5" height="10" rx="2" fill="#ff5b4d" opacity=".85"/><rect x="64" y="0" width="6.5" height="10" rx="2" fill="#e8b23e" opacity=".85"/><rect x="72" y="0" width="6.5" height="10" rx="2" fill="#e8b23e" opacity=".85"/><rect x="80" y="0" width="6.5" height="10" rx="2" fill="#ff5b4d" opacity=".85"/><rect x="88" y="0" width="6.5" height="10" rx="2" fill="#ff5b4d" filter="url(#barGlow)"/><rect x="88" y="0" width="6.5" height="10" rx="2" fill="#ff5b4d"/></svg><div class="dval">&#9650;$1.80</div></div></div>
         </article>
       </div>
 
