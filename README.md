@@ -63,3 +63,40 @@ Nothing is silently replaced.
 This README is the house pattern for Jon's preview repos. Copy the shape:
 badges → live link → hero screenshot → what's inside → tech stack →
 structure → workflow.
+
+## Revision history
+
+- **2026-09-25 — `xrev-best-of-both`** — Jon locked the winner: square bars +
+  delta readout on all three live cards (fal.ai ▲$2.40, OpenRouter ▲$0.95,
+  DeepSeek ▲$1.80 — sample deltas vs 12-day average; latest bar glows red).
+  Waveform, spend-clock, and heat-strip experiments removed along with their
+  CSS. New manual cards: GrokBot (Ravyn) with real usage (weekly 3%, resets
+  Oct 2; on-demand $8.09/$2, over limit, resets Oct 11) and Muse with real
+  Power-plan usage (36% used, 315M tokens left, resets Sep 28). Reset/renewal
+  dates now shown wherever they occur. Fresh dark-mode hero screenshot in the
+  same commit.
+
+- **2026-09-25 — `xrev-best-of-both`** — Cross-review update pass (Trinity lane,
+  staying charcoal + red/gold per the bake-off brief — no cyan). Agreed steals
+  implemented: Ravyn-style card traces (glow curve, area wash + end dot) in
+  the red accent while keeping the 7-day usage bar panel; radii tightened to
+  4px everywhere; new USE OR LOSE urgency hero for the Sep 30 Higgsfield
+  cashback deadline with live countdown; single global DEMO banner —
+  per-card MOCK/MANUAL/SAMPLE chips removed; "Connection health 0/8" renamed
+  to "Configured connections"; Configure/Edit controls got real button
+  affordance; cap bars now read "Used $X of $Y cap" + "$Z remaining". Kept:
+  sticky Overview/Connections/Build-plan tabs, 4-metric summary strip,
+  provider monograms + config dialog shell, access-model panel, narrative
+  order. Stayed single-file HTML (a JSON split would break the file:// demo
+  and adds fetch failure surface). Fresh dark-mode hero screenshot in the
+  same commit.
+
+- **2026-09-25 — `charcoal-restyle`** — Killed the amber/brown wash: deeper
+  charcoal base (`#0a0b0d`), cooled the warm-tinted grays, removed the gold
+  background glow. Red is now the lead accent (primary buttons, eyebrow,
+  DEMO mark, usage bars); gold kept only for tiny accents and per-card
+  service coding. Added: provider facet filter pills (All / Live / Manual),
+  live "Nd left" countdown chip on the Higgsfield Sep 30 cashback deadline,
+  card hover lift, tabular numerals on balances, red text selection, and
+  `prefers-reduced-motion` coverage for the new interactions. Fresh dark-mode
+  hero screenshot.
