@@ -66,6 +66,16 @@ structure → workflow.
 
 ## Revision history
 
+- **2026-09-25 — `xrev-best-of-both`** — Jon locked the winner: square bars +
+  delta readout on all three live cards (fal.ai ▲$2.40, OpenRouter ▲$0.95,
+  DeepSeek ▲$1.80 — sample deltas vs 12-day average; latest bar glows red).
+  Waveform, spend-clock, and heat-strip experiments removed along with their
+  CSS. New manual cards: GrokBot (Ravyn) with real usage (weekly 3%, resets
+  Oct 2; on-demand $8.09/$2, over limit, resets Oct 11) and Muse with real
+  Power-plan usage (36% used, 315M tokens left, resets Sep 28). Reset/renewal
+  dates now shown wherever they occur. Fresh dark-mode hero screenshot in the
+  same commit.
+
 - **2026-09-25 — `xrev-best-of-both`** — Cross-review update pass (Trinity lane,
   staying charcoal + red/gold per the bake-off brief — no cyan). Agreed steals
   implemented: Ravyn-style card traces (glow curve, area wash + end dot) in
